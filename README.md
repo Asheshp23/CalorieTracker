@@ -1,1 +1,3 @@
 # CalorieTracker
+
+Simple calorie tracker iOS app, built using the latest technologies in SwiftUI. The app provides an easy way for users to track their daily calorie intake, calculate their BMI, and monitor their progress towards their fitness goals. With its sleek and intuitive interface, the app makes it easy for users to input and manage their food and exercise data, and set and track their goals. Additionally, the app offers a variety of features such as bar chart representation to help users visualize their progress and understand their body better. Whether you're a beginner or an experienced fitness enthusiast, this app is the perfect tool for achieving your health and fitness goals.
