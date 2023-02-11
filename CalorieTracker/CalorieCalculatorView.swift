@@ -1,14 +1,15 @@
 import SwiftUI
 
 struct CalorieCalculatorView: View {
-  @State private var weight: String = ""
-  @State private var height: String = ""
-  @State private var age: String = ""
+  @State private var weight: String = "73"
+  @State private var height: String = "180"
+  @State private var age: String = "29"
   @State private var activity: Double = 1.2
-  @State private var gender: String = "Female"
+  @State private var gender: String = "Male"
   @State private var bmr: Double = 0
   @State private var bmi: Double = 0
   @State private var result: String = ""
+  @State private var viewBMI: Bool = false
 
   let activityLevels = ["Sedentary", "Lightly Active", "Moderately Active", "Very Active", "Extra Active"]
   let genders = ["Female", "Male"]
@@ -16,24 +17,15 @@ struct CalorieCalculatorView: View {
   var body: some View {
     Form {
       Section(header: Text("Personal Information")) {
-        HStack {
-          Text("Weight (kg)")
-          Spacer()
-          TextField("Enter your weight", text: $weight)
-            .keyboardType(.decimalPad)
-        }
-        HStack {
-          Text("Height (cm)")
-          Spacer()
-          TextField("Enter your height", text: $height)
-            .keyboardType(.decimalPad)
-        }
-        HStack {
-          Text("Age")
-          Spacer()
-          TextField("Enter your age", text: $age)
-            .keyboardType(.decimalPad)
-        }
+        CustomTextFieldView(text: $weight,
+                            placeHolder: "Enter your weight:",
+                            title: "Weight (kg)")
+        CustomTextFieldView(text: $height,
+                            placeHolder: "Enter your height:",
+                            title: "Height (cm)")
+        CustomTextFieldView(text: $age,
+                            placeHolder: "Enter your age:",
+                            title: "Age")
         HStack {
           Text("Gender")
           Spacer()
@@ -52,7 +44,7 @@ struct CalorieCalculatorView: View {
               .tag(Double(index) + 1.2)
           }
         }
-        .pickerStyle(SegmentedPickerStyle())
+        .pickerStyle(WheelPickerStyle())
       }
       Section(header: Text("Results")) {
         HStack {
@@ -74,11 +66,20 @@ struct CalorieCalculatorView: View {
         }
         Button(action: {
           self.calculateBMR()
+          self.viewBMI.toggle()
+        }) {
+          Text("View BMI graph")
+        }
+        Button(action: {
+          self.calculateBMR()
         }) {
           Text("Calculate")
         }
       }
     }
+    .sheet(isPresented: $viewBMI, content: {
+      BMIGraphView(bmi: bmi)
+    })
     .navigationBarTitle("Calorie Calculator")
   }
   func calculateBMR() {
