@@ -4,10 +4,12 @@ struct BMIGraphView: View {
     var bmi: Double
     
     private let bmiRanges: [(range: ClosedRange<Double>, label: String, color: Color)] = [
-        (0...18.5, "Underweight", .blue),
-        (18.5...24.9, "Healthy Weight", .green),
-        (25...29.9, "Overweight", .orange),
-        (30...100, "Obesity", .red)
+        (0...18.5, "Underweight", Color.blue.opacity(0.8)),
+        (18.5...24.9, "Healthy Weight", Color.green.opacity(0.8)),
+        (25...29.9, "Overweight", Color.orange.opacity(0.8)),
+        (30...34.9, "Obesity I", Color.red.opacity(0.8)),
+        (35...39.9, "Obesity II", Color.red.opacity(0.9)),
+        (40...100, "Morbid Obesity", Color.red)
     ]
     
     var body: some View {
@@ -57,59 +59,14 @@ struct BMIGraphView: View {
                         .frame(width: bmiPosition, height: 20)
                         .foregroundColor(color)
                         .padding(.bottom)
-                    
                 }
             }
-            .animation(.easeInOut(duration: 0.8))
             
             RoundedRectangle(cornerRadius: 8)
                 .frame(width: 2, height: 20)
                 .foregroundColor(Color.black.opacity(0.6))
                 .offset(x: bmiPosition)
                 .padding(.bottom)
-        }
-    }
-}
-
-struct LegendView: View {
-    private let bmiRanges: [(range: ClosedRange<Double>, label: String, color: Color)] = [
-        (0...18.5, "Underweight", .blue),
-        (18.5...24.9, "Healthy Weight", .green),
-        (25...29.9, "Overweight", .orange),
-        (30...100, "Obesity", .red)
-    ]
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 20) {
-                ForEach(bmiRanges.indices, id: \.self) { index in
-                    LegendItem(label: self.bmiRanges[index].label, range: self.bmiRanges[index].range, color: self.bmiRanges[index].color)
-                }
-            }
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color(UIColor.systemGray6))
-            .cornerRadius(10)
-            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
-        }
-    }
-}
-
-struct LegendItem: View {
-    var label: String
-    var range: ClosedRange<Double>
-    var color: Color
-    
-    var body: some View {
-        HStack {
-            RoundedRectangle(cornerRadius: 4)
-                .fill(color)
-                .frame(width: 20, height: 20)
-            Text(label)
-                .font(.footnote)
-                .foregroundColor(Color.black.opacity(0.8))
-            Text("\(Int(range.lowerBound)) - \(Int(range.upperBound))")
-                .font(.caption)
-                .foregroundColor(Color(UIColor.secondaryLabel))
         }
     }
 }

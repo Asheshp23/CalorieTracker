@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F041BCA2B93C4D200EBA308 /* CalorieTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F041BC92B93C4D200EBA308 /* CalorieTrackerViewModel.swift */; };
+		0F041BD02B93E1C400EBA308 /* SummaryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F041BCF2B93E1C400EBA308 /* SummaryItemView.swift */; };
+		0F041BD32B93E20A00EBA308 /* WeightGoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F041BD22B93E20A00EBA308 /* WeightGoalModel.swift */; };
+		0F041BD52B93E26A00EBA308 /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F041BD42B93E26A00EBA308 /* LegendView.swift */; };
+		0F041BD72B93E28300EBA308 /* LegendItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F041BD62B93E28300EBA308 /* LegendItemView.swift */; };
 		BE574710299725530053DE8E /* BMIGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57470F299725530053DE8E /* BMIGraphView.swift */; };
-		BE5747122997262D0053DE8E /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5747112997262D0053DE8E /* CustomTextFieldView.swift */; };
+		BE5747122997262D0053DE8E /* LabeledTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5747112997262D0053DE8E /* LabeledTextFieldView.swift */; };
 		BECEC5B9298746DF004E22E4 /* CalorieTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEC5B8298746DF004E22E4 /* CalorieTrackerApp.swift */; };
 		BECEC5BD298746E1004E22E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECEC5BC298746E1004E22E4 /* Assets.xcassets */; };
 		BECEC5C0298746E1004E22E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECEC5BF298746E1004E22E4 /* Preview Assets.xcassets */; };
@@ -16,7 +21,7 @@
 		BECEC5D4298746E1004E22E4 /* CalorieTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEC5D3298746E1004E22E4 /* CalorieTrackerUITests.swift */; };
 		BECEC5D6298746E1004E22E4 /* CalorieTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEC5D5298746E1004E22E4 /* CalorieTrackerUITestsLaunchTests.swift */; };
 		BECEC5E3298749A6004E22E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEC5BA298746DF004E22E4 /* ContentView.swift */; };
-		BECEC5E529874AA8004E22E4 /* CalorieCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEC5E429874AA8004E22E4 /* CalorieCalculatorView.swift */; };
+		BECEC5E529874AA8004E22E4 /* CalorieTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEC5E429874AA8004E22E4 /* CalorieTrackerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F041BC92B93C4D200EBA308 /* CalorieTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerViewModel.swift; sourceTree = "<group>"; };
+		0F041BCF2B93E1C400EBA308 /* SummaryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryItemView.swift; sourceTree = "<group>"; };
+		0F041BD22B93E20A00EBA308 /* WeightGoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoalModel.swift; sourceTree = "<group>"; };
+		0F041BD42B93E26A00EBA308 /* LegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
+		0F041BD62B93E28300EBA308 /* LegendItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendItemView.swift; sourceTree = "<group>"; };
 		BE57470F299725530053DE8E /* BMIGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIGraphView.swift; sourceTree = "<group>"; };
-		BE5747112997262D0053DE8E /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		BE5747112997262D0053DE8E /* LabeledTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextFieldView.swift; sourceTree = "<group>"; };
 		BECEC5B5298746DF004E22E4 /* CalorieTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECEC5B8298746DF004E22E4 /* CalorieTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerApp.swift; sourceTree = "<group>"; };
 		BECEC5BA298746DF004E22E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +60,7 @@
 		BECEC5D3298746E1004E22E4 /* CalorieTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerUITests.swift; sourceTree = "<group>"; };
 		BECEC5D5298746E1004E22E4 /* CalorieTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BECEC5E2298748BB004E22E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		BECEC5E429874AA8004E22E4 /* CalorieCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculatorView.swift; sourceTree = "<group>"; };
+		BECEC5E429874AA8004E22E4 /* CalorieTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F041BC82B93C4BC00EBA308 /* CalorieCalculatorView */ = {
+			isa = PBXGroup;
+			children = (
+				0F041BCE2B93E1B500EBA308 /* SummaryItemView */,
+				BECEC5E429874AA8004E22E4 /* CalorieTrackerView.swift */,
+				0F041BC92B93C4D200EBA308 /* CalorieTrackerViewModel.swift */,
+			);
+			path = CalorieCalculatorView;
+			sourceTree = "<group>";
+		};
+		0F041BCB2B93D4DD00EBA308 /* LabeledTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				BE5747112997262D0053DE8E /* LabeledTextFieldView.swift */,
+			);
+			path = LabeledTextFieldView;
+			sourceTree = "<group>";
+		};
+		0F041BCC2B93D4F200EBA308 /* BMIGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				BE57470F299725530053DE8E /* BMIGraphView.swift */,
+				0F041BD42B93E26A00EBA308 /* LegendView.swift */,
+				0F041BD62B93E28300EBA308 /* LegendItemView.swift */,
+			);
+			path = BMIGraphView;
+			sourceTree = "<group>";
+		};
+		0F041BCD2B93D50000EBA308 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F041BC82B93C4BC00EBA308 /* CalorieCalculatorView */,
+				0F041BCB2B93D4DD00EBA308 /* LabeledTextFieldView */,
+				0F041BCC2B93D4F200EBA308 /* BMIGraphView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F041BCE2B93E1B500EBA308 /* SummaryItemView */ = {
+			isa = PBXGroup;
+			children = (
+				0F041BCF2B93E1C400EBA308 /* SummaryItemView.swift */,
+			);
+			path = SummaryItemView;
+			sourceTree = "<group>";
+		};
+		0F041BD12B93E1FA00EBA308 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F041BD22B93E20A00EBA308 /* WeightGoalModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BECEC5AC298746DF004E22E4 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +165,13 @@
 		BECEC5B7298746DF004E22E4 /* CalorieTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0F041BCD2B93D50000EBA308 /* Views */,
+				0F041BD12B93E1FA00EBA308 /* Models */,
 				BECEC5E2298748BB004E22E4 /* Info.plist */,
 				BECEC5B8298746DF004E22E4 /* CalorieTrackerApp.swift */,
 				BECEC5BA298746DF004E22E4 /* ContentView.swift */,
 				BECEC5BC298746E1004E22E4 /* Assets.xcassets */,
 				BECEC5BE298746E1004E22E4 /* Preview Content */,
-				BECEC5E429874AA8004E22E4 /* CalorieCalculatorView.swift */,
-				BE5747112997262D0053DE8E /* CustomTextFieldView.swift */,
-				BE57470F299725530053DE8E /* BMIGraphView.swift */,
 			);
 			path = CalorieTracker;
 			sourceTree = "<group>";
@@ -269,10 +332,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BECEC5E3298749A6004E22E4 /* ContentView.swift in Sources */,
+				0F041BCA2B93C4D200EBA308 /* CalorieTrackerViewModel.swift in Sources */,
+				0F041BD02B93E1C400EBA308 /* SummaryItemView.swift in Sources */,
 				BE574710299725530053DE8E /* BMIGraphView.swift in Sources */,
+				0F041BD32B93E20A00EBA308 /* WeightGoalModel.swift in Sources */,
+				0F041BD72B93E28300EBA308 /* LegendItemView.swift in Sources */,
 				BECEC5B9298746DF004E22E4 /* CalorieTrackerApp.swift in Sources */,
-				BE5747122997262D0053DE8E /* CustomTextFieldView.swift in Sources */,
-				BECEC5E529874AA8004E22E4 /* CalorieCalculatorView.swift in Sources */,
+				BE5747122997262D0053DE8E /* LabeledTextFieldView.swift in Sources */,
+				0F041BD52B93E26A00EBA308 /* LegendView.swift in Sources */,
+				BECEC5E529874AA8004E22E4 /* CalorieTrackerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

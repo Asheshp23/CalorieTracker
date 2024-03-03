@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CalorieTrackerView: View {
-    @StateObject var viewModel = CalorieCalculatorViewModel()
+    @StateObject var viewModel = CalorieTrackerViewModel()
     
     init() {
     // Sets the background color of the Picker
@@ -151,6 +151,7 @@ struct CalorieTrackerView: View {
         }
         .padding(.all)
         .background(.indigo.opacity(0.5))
-        .navigationBarTitle("Calorie Calculator")
+        .navigationBarTitle(Text("Calorie Tracker")
+                            ,displayMode: .large)
     }
 }

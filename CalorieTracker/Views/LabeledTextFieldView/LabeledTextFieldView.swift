@@ -9,6 +9,7 @@ struct LabeledTextFieldView: View {
         VStack(alignment: .leading) {
             Text(label)
                 .font(.headline)
+                .foregroundStyle(.white)
             TextField(placeholder, text: $text)
                 .keyboardType(.decimalPad)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -17,6 +18,7 @@ struct LabeledTextFieldView: View {
                 .background(Color(UIColor.systemGray6))
                 .cornerRadius(8)
                 .accessibilityLabel(label)
+                .foregroundStyle(.secondary)
         }
         .padding(.vertical, 8)
     }
