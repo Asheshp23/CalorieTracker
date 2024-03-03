@@ -4,7 +4,7 @@
 
 ## Features
 
-- **Calculate BMR**: Utilizes the Mifflin-St Jeor equation to calculate the user's Basal Metabolic Rate (BMR), which represents the number of calories the body needs at rest to maintain vital functions.
+- **Calculate BMR**: Utilizes the Harris benedict's equation to calculate the user's Basal Metabolic Rate (BMR), which represents the number of calories the body needs at rest to maintain vital functions.
 - **Track Personal Information**: Allows users to input their personal information, including weight, height, age, gender, and activity level.
 - **Set Fitness Goals**: Users can set their fitness goals, such as losing weight, maintaining weight, or gaining weight, and receive personalized recommendations based on their selected goal.
 - **Interactive UI**: Utilizes a modern and intuitive user interface with SwiftUI components, including segmented pickers, buttons, and interactive graphs.
